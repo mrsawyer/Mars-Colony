@@ -1,0 +1,38 @@
+.encounters-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 10% 0;
+
+    .encounters-header {
+        height: 25%;
+        p{
+            margin: 0;
+            font-size: 1.2rem;
+        }
+    }
+
+    .reports{
+        display: flex;
+        flex-direction: column;
+        height:50%;
+        overflow: hidden;
+    }
+
+    .encounters-footer {
+        height: 25%;
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .report-encounter{
+            color: white;
+            text-decoration: none;
+            width: 40%;
+            font-size: 2rem;
+        }
+    }
+}

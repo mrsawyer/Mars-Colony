@@ -15,8 +15,8 @@ const routes: Routes = [
   { path: '', component: WelcomeComponent },
   { path: 'encounters', component: EncountersComponent },
   { path: 'register', component: RegisterComponent },
-  { path: '**', component: NotfoundComponent },
   { path: 'report', component: ReportComponent },
+  { path: '**', component: NotfoundComponent }
 ]
 
 @NgModule({
@@ -31,7 +31,8 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

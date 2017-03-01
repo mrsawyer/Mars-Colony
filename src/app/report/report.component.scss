@@ -1,0 +1,56 @@
+.report-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 10% 0;
+
+    .report-header{
+        height: 10%;
+        p{
+            margin:0;
+            font-size: 1.1rem;
+        }
+    }
+
+    .report-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 45%;
+        select{
+            background-color: transparent;
+            border-radius: 0;
+            border: none;
+            border-bottom: 1px solid white;
+            width: 80%;
+            margin: 5% 0;
+            color: #ED4343;
+            font-size: 1.1rem;
+            padding: 1% 2%;
+            height: 15%;
+            &::placeholder{
+                color: #ED4343;
+            }
+        }
+        .action-taken{
+            width: 80%;
+            height: 80%;
+            padding-left: 10px;
+            color: #ED4343;
+            font-size: 1.1rem;
+        }
+    }
+    .report-the-encounter{
+        color: white;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: normal;
+        margin-top: 10%;
+        height: 45%;
+    }
+}

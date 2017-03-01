@@ -1,0 +1,43 @@
+.register-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 10% 0;
+
+    .register-title{
+        height: 10%;
+    }
+
+    .register-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 40%;
+        select, input{
+            background-color: transparent;
+            border-radius: 0;
+            border: none;
+            border-bottom: 1px solid white;
+            width: 80%;
+            margin: 5% 0;
+            color: #ED4343;
+            font-size: 1.1rem;
+            padding: 1% 2%;
+            &::placeholder{
+                color: #ED4343;
+            }
+        }
+    }
+    .register-checkin{
+        color: white;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: normal;
+        margin: 0;
+    }
+}

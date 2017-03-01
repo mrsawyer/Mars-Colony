@@ -3,22 +3,15 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <h1>{{title}}</h1>
-  <p> You decide on new title: <input [(ngModel)]="newTitle"></p>
-  <button (click)="changeTitle()"> Change it, yeah</button>
+    <a routerLink="register">Register</a>
+    <a routerLink="report">Report</a>
+    <a routerLink="encounters">Encounters</a>
+    <a routerLink="">Welcome</a>
+    <a routerLink="**">Not Found</a>
+    <div class="app-container"><router-outlet></router-outlet></div>
   `,
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app works!';
-  newTitle = '';
-  clickCount = 0;
-
-  changeTitle(){
-    if(this.newTitle === ''){
-      this.title = this.title;
-    } else{
-      this.title = this.newTitle;
-    }
-  }
+  
 }
