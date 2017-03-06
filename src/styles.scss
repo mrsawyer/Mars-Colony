@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'normalize';
+
 body{
     margin: 0;
 }
@@ -7,4 +9,9 @@ h1{
     font-size: 2.25rem;
     font-weight: normal;
     margin: 0;
+}
+
+button{
+    background: none;
+    border: none;
 }

@@ -4,8 +4,12 @@
     <p>See an Alien? Report it!</p>
   </header>
   <section class="reports">
+    <div *ngFor="let encounter of marsEncounters" class="so-many-encounters">
+      <p>{{encounter.date}} - {{encounter.atype}}</p>
+      <p> {{ encounter.action }}</p>
+    </div>
   </section>
   <footer class="encounters-footer">
-    <a class="report-encounter" href=""> Report Encounter </a>
+    <a class="report-encounter" href="/report"> Report Encounter </a>
   </footer>
 </div>

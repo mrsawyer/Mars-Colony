@@ -8,7 +8,7 @@
     padding: 10% 0;
 
     .encounters-header {
-        height: 25%;
+        height: 15%;
         p{
             margin: 0;
             font-size: 1.2rem;
@@ -18,8 +18,19 @@
     .reports{
         display: flex;
         flex-direction: column;
-        height:50%;
-        overflow: hidden;
+        height: 60%;
+        overflow: scroll;
+        text-align: left;
+        padding: 0 5%;
+
+        .so-many-encounters{
+            margin: 10px 0;
+            line-height: 1.2rem;
+            p{
+                margin: 0;
+                font-size: 1.25rem;
+            }
+        }
     }
 
     .encounters-footer {
